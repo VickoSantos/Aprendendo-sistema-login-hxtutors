@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-custom">
+            <div class="panel-heading">
+                <a id="logo" href="<?php echo BASE; ?>">
+                    <img class="img-responsive" src="<?php echo IMG; ?>hxphp-logo.png" alt="">
+                </a> <br>
+                <?php echo (isset($this->menu) ? $this->menu : ''); ?>
+            </div>
+            <div class="panel-body">
+              <div class="alert alert-block alert-warning">
+                <h4>Recupere sua senha.</h4>
+                Um link de redefinição será enviado para o seu e-mail. Por favor,
+                verifique a caixa de SPAM.
+              </div>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="username" class="col-sm-3 control-label">Usuário:</label>
+                    <div class="col-sm-8">
+                      <input type="text" name="username" class="form-control" id="username" placeholder="VickoSantos">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <button type="submit" class="btn btn-success">Enviar link de redefinição</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
